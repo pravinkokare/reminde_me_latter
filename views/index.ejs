@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Reminder</title>
+</head>
+<body>
+  <h1>Create Reminder</h1>
+  <form action="/reminders" method="post">
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    <label for="remind_via">Remind Via:</label>
+    <select id="remind_via" name="remind_via">
+      <option value="sms">SMS</option>
+      <option value="email">Email</option>
+    </select><br><br>
+    <button type="submit">Create Reminder</button>
+  </form>
+</body>
+</html>
